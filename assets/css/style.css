@@ -1,0 +1,142 @@
+body:hover .cursor {
+    pointer-events: none;
+}
+
+.bp_hover-bg,
+.bs_hover-bg,
+.bt_hover-bg,
+.bf_faq_asked-bg,
+.bd_hover-bg,
+.cta_btn-bg,
+.bm_hover-bg,
+.bm_hover-bg-stroke,
+.bg_stroke-btn {
+    width: calc(100% + 4rem);
+    height: calc(100% + 4rem);
+}
+
+.footer_link,
+.nav_link {
+    position: relative;
+    white-space: nowrap;
+}
+
+.footer_link::before,
+.nav_link::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.footer_link:hover::before,
+.nav_link:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+.custom {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 18px;
+    padding-right: 20px;
+}
+
+.w-editor .js-preloader {
+    display: none;
+}
+
+.no-scroll-transition {
+    overflow: hidden;
+    position: relative;
+}
+
+.transition {
+    display: block;
+}
+
+.w-editor .transition {
+    display: none;
+}
+
+.circle,
+.Circle_02 {
+    pointer-events: none;
+}
+
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.play-video-on {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark background */
+    z-index: 99999;
+}
+
+.play-video-off {
+    display: none !important;
+}
+
+.w-lightbox-backdrop {
+    background: #fff !important;
+}
+
+.w-lightbox-figure {
+    height: 100vh;
+    width: 100vw;
+}
+
+.w-lightbox-content {
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 20px 26px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.play-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+}

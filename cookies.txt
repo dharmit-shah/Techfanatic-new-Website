@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.www.wavespace.agency	TRUE	/	FALSE	1999999999	_cfuvid	tAZHRST_nRwfk7HoXD2mQJNTaZEkj2110KNtDnkQ7LU-1768993271295-0.0.1.1-604800000
+www.wavespace.agency	TRUE	/	FALSE	1999999999	SameSite	None
+
