@@ -1546,9 +1546,9 @@
               </div>
             </div>
           </div>
-        </div><img src="https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO.webp"
+        </div>
+        <img src="https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO.webp"
           loading="lazy" width="3840" sizes="(max-width: 1919px) 100vw, 3840px, 100vw" alt="footer logo"
-          srcset="https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-500.webp 500w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-800.webp 800w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-1080.webp 1080w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-1600.webp 1600w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-2000.webp 2000w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-2600.webp 2600w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO-p-3200.webp 3200w, https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/67bfe5a203644c13b55faa07_LOGO.webp 7680w"
           class="footer_w-image" />
       </section>
     </div>
@@ -1559,51 +1559,23 @@
     crossorigin="anonymous"></script>
   <script src="../cdn.prod.website-files.com/6655d16113e6966ef4eb1041/js/wavespace.cb20aac5.24b15cc6dcabd7b1.js"
     type="text/javascript" integrity="sha384-gZwTJ5IdqtZrLCkb6vp6exZuZ1rERLexq8osOtLD9hAs7qjBzVvADR8AlXSfQY4M"
-    crossorigin="anonymous"></script><!-- 🚀 Smooth scroll + lazy video (defer so it doesn't block render) -->
+    crossorigin="anonymous"></script>
   <link rel="preload" href="../cdn.jsdelivr.net/gh/studio-freight/lenis%400.2.28/bundled/lenis.js" as="script">
 
   <script defer src="../cdn.jsdelivr.net/gh/studio-freight/lenis%400.2.28/bundled/lenis.js"></script>
   <script defer src="../cdn.jsdelivr.net/npm/lazy-load-video%40latest/dist/custom-video.js"></script>
 
-  <!-- ✅ Google Analytics (official async pattern, non-blocking) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE1NYLK8P3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-CE1NYLK8P3");
-  </script>
-
-  <!-- ✅ All custom JS combined, no jQuery dependency  -->
   <script defer>
     document.addEventListener("DOMContentLoaded", function () {
-
-      /* ============================
-         ⚡ 0. Lazy-load images except LCP / critical
-      ============================ */
-      document.querySelectorAll("img:not(.no-lazy)").forEach(function (img) {
-        img.loading = "lazy";
-      });
-
-      /* ============================
-         ⚡ 1. Cursor Hover Effects
-      ============================ */
+      document.querySelectorAll("img:not(.no-lazy)").forEach(function (img) { img.loading = "lazy"; });
       const cursorCircle = document.querySelector(".cursor_circle");
       const cursorText = document.querySelector(".cursor_text");
-
-      const hoverTargets = document.querySelectorAll(
-        ".showreel-lightbox, .tes_right-icon, .case_thumbnail-wrap, .services-right-arrow, .team_right-arrow, .location_work_img"
-      );
+      const hoverTargets = document.querySelectorAll(".showreel-lightbox, .tes_right-icon, .case_thumbnail-wrap, .services-right-arrow, .team_right-arrow, .location_work_img");
 
       hoverTargets.forEach(function (el) {
-        el.addEventListener("mouseenter", function () {
-          if (cursorCircle) cursorCircle.classList.add("is_large");
-        });
-        el.addEventListener("mouseleave", function () {
-          if (cursorCircle) cursorCircle.classList.remove("is_large");
-        });
+        el.addEventListener("mouseenter", function () { if (cursorCircle) cursorCircle.classList.add("is_large"); });
+        el.addEventListener("mouseleave", function () { if (cursorCircle) cursorCircle.classList.remove("is_large"); });
       });
-
       const textMap = {
         ".showreel-lightbox":
           "Play",
@@ -1612,47 +1584,23 @@
         ".tes_right-icon, .team_right-arrow":
           "View Next"
       };
-
       Object.keys(textMap).forEach(function (selector) {
         document.querySelectorAll(selector).forEach(function (el) {
-          el.addEventListener("mouseenter", function () {
-            if (cursorText) cursorText.textContent = textMap[selector];
-          });
+          el.addEventListener("mouseenter", function () { if (cursorText) cursorText.textContent = textMap[selector]; });
         });
       });
-
-      /* ============================
-         ⚡ 2. Floating form labels (vanilla JS)
-      ============================ */
       const formLabels = document.querySelectorAll(".form-label");
-      formLabels.forEach(function (label) {
-        label.style.color = "#7e7e81";
-        label.classList.remove("focus-in");
-      });
-
+      formLabels.forEach(function (label) { label.style.color = "#7e7e81"; label.classList.remove("focus-in"); });
       document.querySelectorAll(".form-input").forEach(function (input) {
         const label = input.closest(".form-field")?.querySelector(".form-label") || input.previousElementSibling;
-
         function updateLabel() {
           if (!label) return;
-          if (input.value.trim() !== "") {
-            label.classList.add("focus-in");
-            label.style.color = "#7e7e81";
-          } else {
-            label.classList.remove("focus-in");
-            label.style.color = "#7e7e81";
-          }
+          if (input.value.trim() !== "") { label.classList.add("focus-in"); label.style.color = "#7e7e81"; }
+          else { label.classList.remove("focus-in"); label.style.color = "#7e7e81"; }
         }
-
         input.addEventListener("input", updateLabel);
-
-        input.addEventListener("focusin", function () {
-          if (label) label.style.color = "#2a1ad4";
-        });
-
+        input.addEventListener("focusin", function () { if (label) label.style.color = "#2a1ad4"; });
         input.addEventListener("focusout", updateLabel);
-
-        // initial state
         updateLabel();
       });
     });
