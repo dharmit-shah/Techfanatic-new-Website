@@ -430,3 +430,49 @@ html{
     height: 3.25em;
     display: flex;
 }
+.btn_primary-3 {
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    color: #fff;
+    background-color:var(--primary-color);
+    border-radius: 100px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.nav_menu_icon-wrap {
+    grid-column-gap: .375rem;
+    grid-row-gap: .375rem;
+    color: #fff;
+    cursor: pointer;
+    background-color:var(--primary-color);
+    border-radius: 100px;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem 1.125rem;
+    font-size: .9375rem;
+    font-weight: 600;
+    line-height: 1.26;
+    display: flex;
+}
+.mcontact_btn {
+    border-radius: var(--border-radius--100px);
+    background-color: var(--primary-color);
+    color: var(--all-colors--white-color);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem .5rem .5rem 1.5rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.27;
+    display: flex;
+}
