@@ -476,3 +476,30 @@ html{
     line-height: 1.27;
     display: flex;
 }
+.pricing_tab._1.w--current {
+    background-color: var(--secondary-color);
+    color: var(--black-600);
+}
+.pr_-_text {
+    color: var(--secondary-color);
+    background-color: #42452c;
+    border-radius: 2px;
+    padding: .25rem .5rem;
+    font-size: .5rem;
+    font-weight: 700;
+}
+.cta_link {
+    color: var(--secondary-color);
+    flex: none;
+    margin-left: -.35rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.small-text {
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 600;
+}
+.pricing-button.yellow {
+    background-color: var(--secondary-color);
+}
