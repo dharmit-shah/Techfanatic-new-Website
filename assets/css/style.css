@@ -265,7 +265,7 @@ html.lenis {
 
 
 /* custom css */
-html{
+html {
     --primary-color: #3682c2;
     --secondary-color: #CDEAFB;
     --text-color: #000;
@@ -289,6 +289,7 @@ html{
     position: relative;
     overflow: hidden;
 }
+
 .bd_icon {
     flex-direction: column;
     justify-content: center;
@@ -298,6 +299,7 @@ html{
     display: flex;
     filter: grayscale(1);
 }
+
 .f_call-main {
     background-color: var(--primary-color) !important;
     border-radius: 100%;
@@ -316,7 +318,7 @@ html{
     line-height: 1.31;
 }
 
-.f_call_icon_wrapper img{
+.f_call_icon_wrapper img {
     filter: invert(1);
 }
 
@@ -337,6 +339,7 @@ html{
     position: relative;
     overflow: hidden;
 }
+
 .btn_secondary {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
@@ -358,6 +361,7 @@ html{
 .secondary_button:hover {
     background-color: var(--primary-color);
 }
+
 .btn_faq-asked {
     grid-column-gap: .625rem;
     grid-row-gap: .625rem;
@@ -376,6 +380,7 @@ html{
     position: relative;
     overflow: hidden;
 }
+
 .c_submit_btn {
     z-index: 10;
     border-radius: var(--border-radius--100px);
@@ -387,11 +392,13 @@ html{
     line-height: 1.25;
     transition: all .3s;
 }
+
 .bt_hover-bg {
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     border-radius: 100%;
     position: absolute;
 }
+
 .bp_hover-bg:where(.w-variant-6f7fb0c5-86bf-e10b-d74d-ace9b317d3dc),
 .bp_hover-bg.black-white-7,
 .bp_hover-bg.black-white-7 {
@@ -405,6 +412,7 @@ html{
     padding-top: 1.125rem;
     padding-bottom: 1.125rem;
 }
+
 .main_service-sec.services {
     background-color: var(--primary-color);
     background-image: none;
@@ -430,11 +438,12 @@ html{
     height: 3.25em;
     display: flex;
 }
+
 .btn_primary-3 {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
     color: #fff;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 100px;
     flex-flow: row;
     justify-content: center;
@@ -447,12 +456,13 @@ html{
     position: relative;
     overflow: hidden;
 }
+
 .nav_menu_icon-wrap {
     grid-column-gap: .375rem;
     grid-row-gap: .375rem;
     color: #fff;
     cursor: pointer;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     border-radius: 100px;
     flex: none;
     justify-content: center;
@@ -463,6 +473,7 @@ html{
     line-height: 1.26;
     display: flex;
 }
+
 .mcontact_btn {
     border-radius: var(--border-radius--100px);
     background-color: var(--primary-color);
@@ -476,10 +487,12 @@ html{
     line-height: 1.27;
     display: flex;
 }
+
 .pricing_tab._1.w--current {
     background-color: var(--secondary-color);
     color: var(--black-600);
 }
+
 .pr_-_text {
     color: var(--secondary-color);
     background-color: #42452c;
@@ -488,6 +501,7 @@ html{
     font-size: .5rem;
     font-weight: 700;
 }
+
 .cta_link {
     color: var(--secondary-color);
     flex: none;
@@ -495,11 +509,81 @@ html{
     font-weight: 500;
     text-decoration: underline;
 }
+
 .small-text {
     color: var(--secondary-color);
     font-size: 13px;
     font-weight: 600;
 }
+
 .pricing-button.yellow {
     background-color: var(--secondary-color);
+}
+
+
+
+@media (max-width: 700px) {
+
+
+    .meeting_sec {
+
+        margin: -41px 0px 0px 0px;
+    }
+
+    .pricing__hero-content {
+
+        margin: -65px 0px 0px 0px;
+    }
+
+    .about_h1-heading {
+
+        margin: -3px 0px 0px 0px;
+    }
+
+    .section-title {
+    margin: 0px 0px 0px 0px;
+}   
+
+    .contact_sec:where(.w-variant-e3cdd565-d9c1-38bf-29d4-fb615d2e1909) {
+        padding-top: 3rem;
+    }
+
+    .case-studies_sec {
+        padding-top: 106px;
+    }
+
+    .container.is_contact {
+        margin: -37px 0px 0px 0px;
+    }
+
+
+.blog_heading.is-blog-page {
+    margin-top: 54px;
+
+}
+
+.contact_content.project1 {
+    margin: 36px 0px 0px 0px;
+}
+
+.contact_content.project2 {
+    margin: 120px 0px 0px 0px;
+}
+
+.project3 {
+    margin: 34px 0px 0px 0px;
+}
+
+.contact_heading {
+
+    margin: 102px 0px 0px 0px;
+}
+
+.contact_heading {
+    margin: 0px 0px 0px 0px;
+}
+.section.experiences {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
 }
