@@ -522,7 +522,7 @@ html {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
 
     .meeting_sec {
@@ -552,9 +552,9 @@ html {
         padding-top: 106px;
     }
 
-    .container.is_contact {
+    /* .container.is_contact {
         margin: -37px 0px 0px 0px;
-    }
+    } */
 
 
 .blog_heading.is-blog-page {
@@ -578,12 +578,21 @@ html {
 
     margin: 102px 0px 0px 0px;
 }
-
 .contact_heading {
     margin: 0px 0px 0px 0px;
 }
 .section.experiences {
     padding-top: 1rem;
     padding-bottom: 4rem;
+}
+.section-title.is-home-case {
+
+    margin: -66px 0px 0px 0px;
+}
+.section_heaing-wrap.steps {
+    align-items: center;
+}
+.contact_sec {
+    margin: 50px auto;
 }
 }
